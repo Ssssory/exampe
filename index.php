@@ -10,5 +10,10 @@
 </head>
 <body>
 
+<h1>простые заготовки</h1>
+<ul>
+    <li><a href="/youtube/">Сохранение превью с youtube</a></li>
+</ul>
+
 </body>
 </html>
