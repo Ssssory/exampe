@@ -24,7 +24,7 @@ if (empty($_POST['format'])){
 ?>
 <form method="post">
     <label for="id">Идентификатор видео </label>
-    <input type="text" name="id" value="" placeholder="<?=$videoLink?>">
+    <input type="text" name="id" value="<?=$videoLink?>" placeholder="">
     <label for="format"></label>
     <select name="format" id="format">
         <option value="maxresdefault">maxresdefault</option>
@@ -69,10 +69,11 @@ if (!empty($videoLink)){
 
 }
 
+
 /**
  * @param $videoID
  * @param $format
- * @return string
+ * @return array|string
  */
 function getAddr($videoID, $format){
     $imgStart = 'https://img.youtube.com/vi/';
